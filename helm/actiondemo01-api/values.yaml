@@ -2,7 +2,7 @@ replicaCount: 2
 k8s:
   namespace: "default"
 app:
-  name: "actiondemo01-api"
+  name: "manandemo-api"
 service:
   port: "5000"
 metrics:
@@ -14,12 +14,12 @@ memory:
   target: "413Mi"
   #This is 85% of the memory limit set.
 pv:
-  name: "actiondemo01sc"
+  name: "manandemosc"
 pvc:
-  name: "actiondemo01pvc"
+  name: "manandemopvc"
 
 image:
-  repository: "barclaysacr02.azurecr.io/actiondemo01"
+  repository: "barclaysacr02.azurecr.io/manandemo"
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 imagePullSecrets:
