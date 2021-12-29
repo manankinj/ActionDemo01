@@ -31,7 +31,7 @@ jobs:
         # Container registry server url
         login-server: barclaysacr02.azurecr.io
     - name: Push the Docker image
-      run: docker push barclaysacr02.azurecr.io/manandemo:latest
+      run: docker push sidlabacr03.azurecr.io/actiondemo01:latest
     
     - name: Helm tool installer
       uses: Azure/setup-helm@v1
